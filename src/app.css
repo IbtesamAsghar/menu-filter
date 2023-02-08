@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.navbar h1 {
+
+    font-size: 2.5rem;
+    color: rgb(58, 57, 57);
+    margin-bottom: .2rem;
+}
+
+.horLine {
+    width: 5rem;
+    height: .3rem;
+    background-color: rgb(223, 80, 175);
+
+}
+
+.navlist a {
+    text-decoration: none;
+
+
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.navlist button {
+    margin: 0 1.2rem;
+    color: rgb(223, 80, 175);
+    font-size: 1rem;
+    font-weight: 530;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.data {
+    display: flex;
+    width: 50%;
+    margin: .2rem 0;
+
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.data img {
+    width: 220px;
+    height: 150px;
+    border: 4px solid rgb(223, 80, 175);
+    border-radius: .6rem;
+    box-shadow: 3px 3px 5px rgb(172, 172, 172);
+}
+
+.text {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted rgb(102, 102, 102);
+
+}
+
+p {
+    color: gray;
+    font-size: .9rem;
+}
+
+@media(max-width: 1422px) {
+    .container {
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1266px) {
+    .data {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:690px) {
+    .data img {
+        /* border: 2px solid red; */
+        width: 180px;
+        height: 150px;
+    }
+
+    .container p {
+        font-size: .9rem;
+
+    }
+
+    .container h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:550px) {
+    .header h3 {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .text {
+        padding-bottom: .1rem;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        /* width: 0%; */
+        margin: .2rem 0;
+
+    }
+
+    .data img {
+        width: 50%;
+        /* height: 180px; */
+    }
+
+    .text {
+        width: 50%;
+        padding: 0 .8rem;
+    }
+}
+
+@media (max-width:540px) {
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media(max-width:480px) {
+    .navlist button {
+        margin: 0 .7rem;
+
+    }
+}
